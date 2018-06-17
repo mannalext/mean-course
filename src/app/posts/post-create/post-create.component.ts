@@ -5,9 +5,12 @@ import {Component} from '@angular/core';
     templateUrl: './post-create.component.html' // could also do "template: [html]"
 })
 export class PostCreateComponent {
+    enteredValue = '';
     newPost = '';
 
     onAddPost() {
-        this.newPost = 'The user\'s post';
+        // console.dir(postInput);
+
+        this.newPost = this.enteredValue;
     }
 }
